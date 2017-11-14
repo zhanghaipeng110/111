@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="/css/Recruit.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="juzhong">
+				<img src="/img/1.png">
+				<ul class="dao">
+					<li><a href="http://localhost:3000/Home" methods="GET">Home</a></li>
+					<li><a href="http://localhost:3000/Design" methods="GET">Design</a></li>
+					<li><a href="http://localhost:3000/About" methods="GET">About</a></li>
+					<li><a href="http://localhost:3000/Recruit" methods="GET">Recruit</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<article>
+			<div class="juz">
+		<div class="juzi">
+					<h1 class="biao"> 经历不同于以往的创意体验</h1>
+					<div class="duozi">
+						<h3>主案设计师</h3>
+						<div class="gang">
+							<h4>岗位职责:</h4>
+							<% for(var i=0;i<banners.length;i++){ %>
+								<p><%=banners[i].title1 %></p>
+							<% } %>
+							<h5>任职要求：</h5>
+							<% for(var i=0;i<banners.length;i++){ %>
+								<p><%=banners[i].title2 %></p>
+							<% } %>
+						</div>	
+					</div>
+					
+					<p class="zizhi">发送简历到邮箱：hr@m-zdesign.com</p>	
+					
+					<div class="duozi">
+						<h3>设计师助理</h3>
+						<div class="gang">
+							<h4>职位要求:</h4>
+							<% for(var i=0;i<banners.length;i++){ %>
+								<p><%=banners[i].title3 %></p>
+							<% } %>
+							<h5>岗位要求：</h5>
+							<% for(var i=0;i<banners.length;i++){ %>
+								<p><%=banners[i].title4 %></p>
+							<% } %>
+							
+						</div>
+					</div>
+					
+					<p class="zizhi">发送简历到邮箱：hr@m-zdesign.com</p>
+					
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="dizhong">
+				<h1>C o n t a c t u s</h1>
+				<div class="zuozi">
+					<p><span>N</span>   穆 恣 （ 上 海 ） 空 间 设 计 有 限 公 司 </p>
+					<p><span>T</span>   0 2 1 - 5 6 7 1 - 1 5 6 2 </p>
+				</div>
+				<div class="youzi">
+					<p><span>E</span>   s e r v i c e @ m - z d e s i g n . c o m </p>
+					<p><span>A</span>   上 海 市 长 宁 区 金 钟 路 6 5 8 号 （ 东 华 大 学 科 技 园 ） 1 5 号 </p>
+					<p>楼 5 层 </p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

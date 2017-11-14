@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/Design.css">
+	<link rel="stylesheet" href="css/Design.css">
+	<script>
+        onresize = function(){
+            document.getElementsByTagName('html')[0].style.fontSize=document.documentElement.clientWidth/20+'px';
+        }
+        document.getElementsByTagName('html')[0].style.fontSize=document.documentElement.clientWidth/20+'px';
+    </script>
+</head>
+<body>
+	<div class="warp">
+		<header>
+			<div class="juzhong">
+				<img src="/img/1.png">
+				<ul class="dao">
+					<li><a href="http://localhost:3000/Home" methods="GET">Home</a></li>
+					<li><a href="http://localhost:3000/Design" methods="GET">Design</a></li>
+					<li><a href="http://localhost:3000/About" methods="GET">About</a></li>
+					<li><a href="http://localhost:3000/Recruit" methods="GET">Recruit</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class='warp'>
+			<div class='content'>
+				<div class='list_one'>
+					<div class='zoo'>ZOO COFFEE (YC AIRPROT)</div>
+					<div class='img'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src %>"</p>
+						<% } %>
+					</div>
+					<div class='men'>MEN FAN（TJ）</div>
+					<div class='big'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src1 %>"</p>
+						<% } %>
+					</div>
+				</div>
+				<div class='list_two'>
+					<div class='rice'>RICE ZONE</div>
+					<div class='zone'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src2 %>"</p>
+						<% } %>
+					</div>
+					<div class='rice'>530 FRUIT TEA</div>
+					<div class='fruit'>	
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src3 %>"</p>
+						<% } %>
+					</div>
+					<div class='rice'>CITY ZOO</div>
+					<div class='city'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src4 %>"</p>
+						<% } %>
+					</div>
+				</div>
+				<div class='list_three'>
+					<div class='rice'>LITTLE PEPPER HOTPOT</div>
+					<div class='little'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src5 %>"</p>
+						<% } %>
+					</div>
+					<div class='rice'>ZOOCOFFEE (YC)</div>
+					<div class='yc'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src6 %>"</p>
+						<% } %>
+					</div>
+					<div class='rice'>CITY ZOO</div>
+					<div class='city'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src7 %>"</p>
+						<% } %>
+					</div>
+				</div>
+				<div class='list_four'>
+					<div class='rice'>COFFEE GATE</div>
+					<div class='coffee'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src8 %>"</p>
+						<% } %>
+					</div>
+					<div class='rice'>CITY ZOO</div>
+					<div class='city'>
+						<% for(var i=0;i<titles.length;i++){ %>
+							<p><img src="<%=titles[i].src9 %>"</p>
+						<% } %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
